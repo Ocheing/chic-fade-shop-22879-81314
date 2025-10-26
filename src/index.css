@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 40 40% 97%;
+    --foreground: 355 45% 15%;
+
+    --card: 40 40% 97%;
+    --card-foreground: 355 45% 15%;
+
+    --popover: 40 40% 97%;
+    --popover-foreground: 355 45% 15%;
+
+    --primary: 355 45% 30%;
+    --primary-foreground: 40 40% 97%;
+
+    --secondary: 40 30% 90%;
+    --secondary-foreground: 355 45% 15%;
+
+    --muted: 40 20% 88%;
+    --muted-foreground: 355 15% 45%;
+
+    --accent: 40 50% 80%;
+    --accent-foreground: 355 45% 15%;
+
+    --gold: 43 74% 66%;
+    --gold-foreground: 355 45% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 35 15% 90%;
+    --input: 35 15% 90%;
+    --ring: 0 0% 10%;
+
+    --radius: 0.25rem;
+    
+    /* Luxury fashion design tokens */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-elegant: 0 4px 20px -4px hsl(0 0% 0% / 0.1);
+    --shadow-hover: 0 8px 30px -6px hsl(0 0% 0% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
